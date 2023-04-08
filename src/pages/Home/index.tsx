@@ -9,14 +9,35 @@ import {
   StartCountdownButton,
   TaskInput,
 } from './styles'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+
+const newCycleFormValidationSchema = z.object({
+  task: z.string().min(1, { message: 'Informe a tarefa' }),
+  minutesAmount: z
+    .number()
+    .min(5, { message: 'O ciclo precisa ser de no mínimo 5 minutos' })
+    .max(60, { message: 'O ciclo precisa ser de no máximo 60 minutos' })
+    .int(),
+})
+
+type NewCycleFormData = z.infer<typeof newCycleFormValidationSchema>
 
 export function Home() {
-  const { register, handleSubmit, watch } = useForm()
+  const { register, handleSubmit, watch, reset } = useForm<NewCycleFormData>({
+    resolver: zodResolver(newCycleFormValidationSchema),
+    defaultValues: {
+      task: '',
+      minutesAmount: 0,
+    },
+  })
 
-  function handleCreateNewCycle(data: any) {
+  function handleCreateNewCycle(data: NewCycleFormData) {
     console.log(data)
+    reset()
   }
 
+  // Controlled input
   const task = watch('task')
 
   // Auxiliar variable to disable the submit button (it turns the code more legible)
@@ -46,8 +67,8 @@ export function Home() {
             id="minutesAmount"
             placeholder="00"
             step={5}
-            min={5}
-            max={60}
+            // min={5}
+            // max={60}
             {...register('minutesAmount', { valueAsNumber: true })}
           />
           <span>minutos.</span>
