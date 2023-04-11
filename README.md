@@ -1,17 +1,20 @@
+<br>
+
 <p align="center">
- <img src="./src/assets/logo-ignite.svg" alt="Timer Application Logo" width="100"><br><br>
+ <img src="./src/assets/logo-ignite.svg" alt="Timer Application Logo" width="100">
 </p>
 
 # Timer Application
 
-<div style="text-align:center">
+<br>
+
+<p align="center">
   <img alt="Top Language" src="https://img.shields.io/github/languages/top/yuriqpaiva/todo-list-ignite"/>
   <img alt="Languages" src="https://img.shields.io/github/languages/count/yuriqpaiva/todo-list-ignite"/>
   <img alt="License" src="https://img.shields.io/github/license/yuriqpaiva/todo-list-ignite"/>
-</div>
+</p>
 
 <p align="center">
- 
   <img src="./src/assets/app.png" alt="Timer Application Screenshot" width="500">
 </p>
 
