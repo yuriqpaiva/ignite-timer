@@ -4,14 +4,14 @@
  <img src="./src/assets/logo-ignite.svg" alt="Timer Application Logo" width="100">
 </p>
 
-# Timer Application
+# Ignite Timer
 
 <br>
 
 <p align="center">
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/yuriqpaiva/todo-list-ignite"/>
-  <img alt="Languages" src="https://img.shields.io/github/languages/count/yuriqpaiva/todo-list-ignite"/>
-  <img alt="License" src="https://img.shields.io/github/license/yuriqpaiva/todo-list-ignite"/>
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/yuriqpaiva/todo-list-ignite?color=blue"/>
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/yuriqpaiva/todo-list-ignite?color=violet"/>
+  <img alt="License" src="https://img.shields.io/github/license/yuriqpaiva/todo-list-ignite?color=red"/>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## 🚀 Features
 
-1. **Create new timer**: Users can create new timers and name them according to their preference. Users can set the desired time for the timer in hours, minutes, and seconds.
+1. **Create new timer**: Users can create new timers and name them according to their preference. Users can set the desired time for the timer in minutes
 
 2. **Interrupt timer**: Users can interrupt the timer if they need to pause their task or take a break.
 
