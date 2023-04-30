@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
- <img src="./src/assets/logo-ignite.svg" alt="Timer Application Logo" width="100">
+ <img src="/public/logo-ignite.svg" alt="Timer Application Logo" width="100">
 </p>
 
 # Ignite Timer
